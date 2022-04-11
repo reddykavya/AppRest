@@ -1,0 +1,28 @@
+<!-- <div [ngClass]="{ red: isClicked && number % 5 != 0,green: isClicked && number % 5 == 0 }" (click)="onClick()">
+{{number}}
+</div> -->
+
+<!--canDeactive-->
+<a routerLink="/admin">Admin</a>
+
+<div *ngIf="check">this is ngIf example</div>
+<button (click)="btnclick()">clickme</button>
+
+<br>
+<br>
+
+<h3 [ngStyle]="{'border': '3px solid red','border-radius': '3px solid red'}">Styling the component</h3>
+<br>
+<br>
+<h3 [ngClass]="heading">class styling</h3>
+
+
+<div class="container" style="text-align: center;font-size:medium">
+    <div appCustom [number]="number" [divisibileBy]="5">{{number}}</div>
+</div>
+
+<ul>
+    <li *ngFor="let item of foods">
+    {{item}}
+    </li>
+  </ul>

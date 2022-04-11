@@ -1,0 +1,28 @@
+<div class="container">
+  <table style="width: 50%; border:1px solid green">
+      <thead>
+          <th>Id</th>
+          <th>Name</th>
+          <th>DOB</th>
+          <th>Gender</th>
+          <th>PhoneNumber</th>
+      </thead>
+
+      <tbody>
+          <tr *ngFor="let data of persons">
+              <td>{{data.ID}}</td>
+              <td>{{data.Name | custom:data.Gender | uppercase}}</td>
+              <td>{{data.DOB }}</td>
+              <td>{{data.Gender}}</td>
+              <td>{{data.phonenum}}</td>
+          </tr>
+          
+      </tbody>
+  </table>
+
+  <h3>{{currentdate | date}}</h3>
+  <h3>{{currentdate | date:"dd/MM/yyyy"}}</h3>
+  <h3>{{percentdata | percent}}</h3>
+</div>
+
+    

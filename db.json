@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 12,
+      "firstname": "hai",
+      "lastname": "qwerty",
+      "email": "qwe@gmail.com",
+      "mobilenum": 7890765435,
+      "studentfee": "90089"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
